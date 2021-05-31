@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    box-shadow: 6px 5px 4px 1px rgba(75, 0, 130, .2);
+}
+
+.screen {
+    width: 300px;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+    overflow: hidden;
+}
+
+#scr-disp {
+    color: white;
+    font-size: 3rem;
+}
+
+button {
+    border: 0px solid grey;
+}
+
+button:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.clr-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: crimson;
+}
+
+.clr-btns p {
+    font-size: .8rem;
+    font-weight: 600;
+    color: white;
+    font-family: sans-serif;
+}
+
+#del,
+#clear {
+    width: 75px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: crimson;
+    color: white;
+}
+
+#del:hover {
+    opacity: 0.5;
+}
+
+#clear:hover {
+    opacity: 0.5;
+}
+
+.other-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(4, 75px);
+    grid-template-areas:
+        "seven eight nine multiplyy"
+        "four five six divide"
+        "one two three minus"
+        "zero dot plus equals";
+}
+
+#nine,
+#eight,
+#seven,
+#six,
+#five,
+#four,
+#three,
+#two,
+#one,
+#zero {
+    background-color: indigo;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+#plus,
+#minus,
+#multiplyy,
+#divide,
+#dot,
+#equals {
+    background-color: indigo;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.oprtn-btns:hover {
+    opacity: 0.5;
+}
+
+/*Grid placements*/
+#nine {
+    grid-area: nine;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#six {
+    grid-area: six;
+}
+
+#five {
+    grid-area: five;
+}
+
+#four {
+    grid-area: four;
+}
+
+#three {
+    grid-area: three;
+}
+
+#two {
+    grid-area: two
+}
+
+#one {
+    grid-area: one;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#minus {
+    grid-area: minus
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#multiply {
+    grid-area: multiplyy;
+}
+
+#equals {
+    grid-area: equals;
+}
+
+/*Hover states*/
+#nine:hover {
+    opacity: 0.5;
+}
+
+#eight:hover {
+    opacity: 0.5;
+}
+
+#seven:hover {
+    opacity: 0.5;
+}
+
+#six:hover {
+    opacity: 0.5;
+}
+
+#five:hover {
+    opacity: 0.5;
+}
+
+#four:hover {
+    opacity: 0.5;
+}
+
+#three:hover {
+    opacity: 0.5;
+}
+
+#two:hover {
+    opacity: 0.5;
+}
+
+#one:hover {
+    opacity: 0.5;
+}
+
+#zero:hover {
+    opacity: 0.5;
+}
